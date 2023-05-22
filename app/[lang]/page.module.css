@@ -1,0 +1,95 @@
+.main {
+  padding: 4rem 6rem;
+  font-size: 3rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 4rem;
+  padding: 2em 0;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.title {
+  font-size: 7vmin;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 3.5vmin;
+  letter-spacing: 0.2rem;
+  color: #8f8f8f;
+  margin-bottom: 1em;
+  ;
+}
+
+.underConstructionText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 3.5vmin;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7em 1.8em;
+  font-size: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  color: #111;
+  border: 2px solid #111;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5em 0 4em;
+  }
+  .textContainer {
+    align-items: start;
+  }
+  .button {
+    font-size: 2rem;
+  }
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: #111;
+    color: #fff;
+  }
+}
+
+@media (prefers-reduced-motion) {}
+
+/* Mobile */
+@media (max-width: 700px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {}
+
+@media (prefers-color-scheme: dark) {}

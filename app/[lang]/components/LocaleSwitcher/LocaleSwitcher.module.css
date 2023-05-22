@@ -1,0 +1,29 @@
+.listWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.localeItem {
+  list-style: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.localeItem a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .localeItem a:hover {
+    text-decoration: underline;
+  }
+}
+
+.localeItem a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}

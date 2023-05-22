@@ -3,20 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3005",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.2.32",
+    "@portabletext/react": "^3.0.0",
+    "@sanity/document-internationalization": "^1.1.1",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.10.0",
+    "@types/negotiator": "^0.6.1",
     "@types/node": "20.0.0",
     "@types/react": "18.2.5",
     "@types/react-dom": "18.2.3",
     "eslint": "8.39.0",
     "eslint-config-next": "13.4.1",
+    "negotiator": "^0.6.3",
     "next": "13.4.1",
+    "next-sanity": "^4.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "sanity": "^3.10.0",
     "typescript": "5.0.4"
   }
 }
