@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { getFileUrl, getPage } from '@/sanity/sanity-utils';
+import { getFileUrl, getImageUrl, getPage } from '@/sanity/sanity-utils';
 import { GiCrane } from "react-icons/gi";
 
 import styles from './page.module.css';
@@ -34,7 +34,7 @@ export default async function Home({params: { lang = 'en' } }: Params) {
         <Image
           alt="profile"
           height={400}
-          src="/pol.png"
+          src={getImageUrl(data.hero.image)}
           width={400}
         />
       </div>

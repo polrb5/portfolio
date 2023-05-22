@@ -1,6 +1,6 @@
 import { defineField, defineType } from 'sanity';
 import { GiCrane } from "react-icons/gi";
-import { desc, document, text, title } from './fields';
+import { desc, document, image, text, title } from './fields';
 
 export default defineType({
   name: 'underConstruction',
@@ -23,6 +23,7 @@ export default defineType({
       fields: [
         defineField(title),
         defineField(desc),
+        defineField(image),
         defineField(text),
       ],
       options: {
