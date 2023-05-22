@@ -25,18 +25,18 @@
   flex-direction: column;
   gap: 2.5rem;
 }
+
 .title {
-  font-size: 7vmin;
-  letter-spacing: 0.5rem;
+  font-size: 6vmin;
+  letter-spacing: 0.3rem;
   font-weight: bold;
 }
 
 .desc {
   font-size: 3.5vmin;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.4rem;
   color: #8f8f8f;
   margin-bottom: 1em;
-  ;
 }
 
 .underConstructionText {
@@ -70,6 +70,14 @@
   }
   .textContainer {
     align-items: start;
+  }
+  .title {
+    font-size: 7vmin;
+    letter-spacing: 0.5rem;
+  }
+  .desc {
+    font-size: 3vmin;
+    letter-spacing: 0.8rem;
   }
   .button {
     font-size: 2rem;
