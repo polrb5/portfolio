@@ -27,6 +27,7 @@ export function middleware(request: NextRequest) {
       '/manifest.json',
       '/favicon.ico',
       '/underConstruction.svg',
+      '/pol.png',
       // Your other files in `public`
     ].includes(pathname)
   )

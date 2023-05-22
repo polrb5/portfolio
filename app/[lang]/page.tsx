@@ -34,7 +34,8 @@ export default async function Home({params: { lang = 'en' } }: Params) {
         <Image
           alt="profile"
           height={400}
-          src={getImageUrl(data.hero.image)}
+          priority
+          src={getImageUrl(data.hero.image) || '/pol.png'}
           width={400}
         />
       </div>
