@@ -23,15 +23,17 @@ export default function LocaleSwitcher({ lang }: LocaleProps) {
     <div>
       <ul className={styles.listWrapper}>
         {i18n.locales.map((locale) => {
-          const redirectedPath = redirectedPathName(locale)
-          const isActive = `/${lang}` === redirectedPath
+          const redirectedPath = redirectedPathName(locale);
+          const isActive = `/${lang}` === redirectedPath;
+          const customLocale = locale === 'ca' ? 'cat' : locale
+          
           return (
             <li key={locale} className={styles.localeItem}>
               <Link
                 href={redirectedPath}
                 className={`${styles.link} ${isActive ? styles.active : ''}`}
               >
-                {locale}
+                {customLocale}
               </Link>
             </li>
           )
