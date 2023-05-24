@@ -7,19 +7,19 @@ import './globals.css';
 import { i18n } from '../../i18n-config';
 
 export const metadata: Metadata = {
-  title: `Pol's Portfolio`,
+  title: 'Pol Reig Broto',
   description: 'This is my portfolio',
   openGraph: {
-    title: `Pol's Portfolio`,
+    title: 'Pol Reig Broto | DEV',
     description: 'This is my portfolio',
     url: 'https://www.polreigbroto.com',
-    siteName: `Pol's Portfolio`,
+    siteName: 'Pol Reig Broto',
     images: [
       {
         url: 'https://www.polreigbroto.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fte1jbfhy%2Fproduction%2F9b3888002eb7477a104d7c2fdde0f3d2b5897db2-2937x2937.png&w=828&q=75',
         alt: 'Profile Image',
-        width: 600,
-        height: 600,
+        width: 500,
+        height: 500,
       },
     ],
   },
