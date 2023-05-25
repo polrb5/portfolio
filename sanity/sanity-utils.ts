@@ -49,9 +49,9 @@ const getImageUrl = (img: Image | undefined) => {
 
 const getFileUrl = (file: File | undefined) => {
   if (!file) return;
-  const imagePathSplitted = file.asset._ref.split('-');
-  const imgName = imagePathSplitted.slice(1, -1).join('-').concat(`.${imagePathSplitted.slice(-1)}`);
-  return `${FILES_BASE_URL}/${imgName}`;
+  const filePathSplitted = file.asset._ref.split('-');
+  const fileName = filePathSplitted.slice(1, -1).join('-').concat(`.${filePathSplitted.slice(-1)}`);
+  return `${FILES_BASE_URL}/${fileName}`;
 };
 
 export {

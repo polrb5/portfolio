@@ -24,7 +24,7 @@ export default async function Home({params: { lang = 'en' } }: Params) {
           <a 
             className={styles.button}
             download
-            href={getFileUrl(data.downloadFile.document)} 
+            href="https://cdn.sanity.io/files/te1jbfhy/production/d4765077ea5e8acc18e1d16257b03ea55954628c.pdf"
             rel="noreferrer"
             target="_blank"
           >
