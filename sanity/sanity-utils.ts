@@ -31,12 +31,12 @@ const IMAGES_BASE_URL = `https://cdn.sanity.io/images/${projectId}/${dataset}`;
 const FILES_BASE_URL = `https://cdn.sanity.io/files/${projectId}/${dataset}`;
 
 const getPage = async (page: string, language: string = 'en') => {
-  const content = await client.fetch(`*[_type == "${page}" && __i18n_lang == "${language}"]`);
+  const content = await client.fetch(`*[_type == "${page}" && __i18n_lang == "${language}"]`, { next: { revalidate: 60 } });
   return content[0];
 };
 
 const fetchLanguages = async () => {
-  const languages = await client.fetch(`*[_type == "language"]`);
+  const languages = await client.fetch(`*[_type == "language"]`, { next: { revalidate: 60 } });
   return (languages || []).map((lang: { name: string; code: string; }) => ({ title: lang.name, name: lang.code, type: "string" }));
 };
 
