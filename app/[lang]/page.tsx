@@ -9,6 +9,7 @@ import { Content, LocaleSwitcher } from './components';
 
 export default async function Home({params: { lang } }: Params) {
   const data = await getPage('underConstruction', lang);
+  console.log('data:', data.downloadFile);
 
   return (
     <main className={styles.main}>
@@ -24,7 +25,8 @@ export default async function Home({params: { lang } }: Params) {
           <a 
             className={styles.button}
             download
-            href="https://cdn.sanity.io/files/te1jbfhy/production/3cb3a29db04cb325e6436b25f0cf700e588edd37.pdf"
+            href={getFileUrl(data.downloadFile.document)}
+            // href="https://cdn.sanity.io/files/te1jbfhy/production/3cb3a29db04cb325e6436b25f0cf700e588edd37.pdf"
             rel="noreferrer"
             target="_blank"
           >
