@@ -7,7 +7,7 @@ import styles from './page.module.css';
 import { Params } from '@/types/params';
 import { Content, LocaleSwitcher } from './components';
 
-export default async function Home({params: { lang = 'en' } }: Params) {
+export default async function Home({params: { lang } }: Params) {
   const data = await getPage('underConstruction', lang);
 
   return (
