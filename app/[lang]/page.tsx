@@ -24,7 +24,7 @@ export default async function Home({params: { lang } }: Params) {
           <a 
             className={styles.button}
             download
-            href="https://cdn.sanity.io/files/te1jbfhy/production/d4765077ea5e8acc18e1d16257b03ea55954628c.pdf"
+            href="https://cdn.sanity.io/files/te1jbfhy/production/3cb3a29db04cb325e6436b25f0cf700e588edd37.pdf"
             rel="noreferrer"
             target="_blank"
           >
